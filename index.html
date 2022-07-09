@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyValue</title>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <div class="sidenav">
+            <a href = "https://keyvalue.systems/index.html" target = "_self"> 
+                <img src = "Pics/kv logo.png" alt = "Kv logo"/> 
+            </a>
+            <a style="display: inline-block;background: #03aeee;width: calc(100% - 15px);margin-left: 15px;padding: 15px;margin-top: 24px;border-top-left-radius: 25px;border-bottom-left-radius: 25px;">
+
+                <img src="Pics/List.png" href="https://www.w3schools.com" ><span style="color: azure;margin-left: 15px;">Employee List</span>
+            </a>
+            
+        </div>   
+    </aside>>        
+ <main class="main">
+    <div class ="banner"></div>
+
+    <div class ="main-form">
+        <section class="main-header">
+            <h1>Create employee</h1>
+        </section>
+            <form class="form-section" action=""  id="form" onsubmit="processChange();return false;">
+                <div class="input-fields" id="myform">
+                    <div class="input-field ">
+                        <label>Employee name</label>
+                        <input id="name" name="Name" type="text" placeholder="Employee Name">
+                    </div>
+                    <div class="input-field">
+                        <label>Employee ID</label>
+                        <input id ="id" name="EmployeeID"type="text" placeholder="Employee ID">
+                    </div>
+                    <div class="input-field">
+                        <label>Joining Date</label>
+                        <input id ="jd" name="Joining Date" type="text" placeholder="Joining date">
+                    </div>
+                    <div class="input-field">
+                        <label>Role</label>
+                        <select name="Role" style="height: 50px" id="roles" placeholder="Choose Role">
+                        <option value="BE">Backend</option>
+                        <option value="FE">Frontend</option>
+                        <option value="QA">Quality Assurance</option>
+                        <option value="PM">Product MAnager</option>
+                        </select>  
+                    </div>
+                    <div class="input-field">
+                        <label>Status</label>
+                        <select name="Status" style="height: 50px" id="status" placeholder="Status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                        </select>  
+                    </div>
+                    <div class="input-field">
+                        <label>Experience</label>
+                        <input id ="exp" name="Experience" type="text" placeholder="Experience">
+                    </div>
+                    <div class="input-field">
+                        <label>Address</label>
+                        <input id="Adress" name="Adress" type="text" placeholder="Adress">
+                    </div>
+                    <div class="input-field">
+                        <label>Upload ID proof</label>
+                        <input id="proof" type="text" placeholder="Choose file">
+                    </div>
+                    <div class="input-field">
+                        <label>Email ID</label>
+                        <input id="email" name="Email" type="text" placeholder="Email">
+                    </div>
+                </div>
+                <p id="demo"></p>
+                    <button id="btn" type="submit" onclick="processChange()">
+                        Create
+                    </button>
+                    <button style="background-color: white;color: grey;" type="submit" onclick=func2() >
+                        Cancel
+                    </button>
+            </form>
+    </div>
+ </main>   
+
+ <script src="javascript.js" type="text/javascript"></script>
+
+</body> 
+</html>   
