@@ -1,4 +1,4 @@
-# Employee_Application
+# KeyValue_Employee_Application
 
 This is an application where a user can login and can see the list of the employees in the company.The user can edit,enter and delete the employees
 in the list.
